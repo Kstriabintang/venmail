@@ -42,15 +42,13 @@ Perfect for signing up to trials, verifying accounts, or anywhere you'd rather n
 
 ## 📸 Screenshots
 
-> Put your image files in `docs/screenshots/` with the names below.
-
-| Home / Inbox | Reading an email |
+| Real-time inbox | Reading an email |
 |---|---|
 | ![Inbox](docs/screenshots/inbox.png) | ![Email](docs/screenshots/email.png) |
 
-| Custom address | Mobile view |
+| Verification code, instantly | Used to sign up for a real service ✅ |
 |---|---|
-| ![Custom address](docs/screenshots/custom-address.png) | ![Mobile](docs/screenshots/mobile.png) |
+| ![Verification code](docs/screenshots/verification.png) | ![In real use](docs/screenshots/in-use.png) |
 
 ---
 

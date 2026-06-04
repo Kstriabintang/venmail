@@ -1,17 +1,12 @@
 # Screenshots
 
-Letakkan file gambar di folder ini dengan **nama persis** berikut agar muncul di README utama:
+File yang dipakai di README utama:
 
-| Nama file | Ambil dari |
+| File | Isi |
 |---|---|
-| `inbox.png` | Halaman depan venmail.my.id — alamat aktif + daftar email masuk |
-| `email.png` | Saat membuka & membaca satu email |
-| `custom-address.png` | Modal "buat alamat custom" (pilih nama + password) |
-| `mobile.png` | Tampilan di layar HP (mode gelap) |
+| `inbox.png` | Inbox real-time (UI venmail) |
+| `email.png` | Membaca satu email (render HTML) |
+| `verification.png` | Email kode verifikasi yang masuk |
+| `in-use.png` | Bukti: alamat venmail dipakai daftar layanan asli |
 
-**Tips kualitas portofolio:**
-- Resolusi tinggi (mis. layar 1440px), format `.png`.
-- Mode gelap (default app) terlihat paling bagus.
-- Sensor data sensitif bila perlu (alamat/email asli orang lain).
-
-Setelah menaruh gambar, commit & push — README akan otomatis menampilkannya.
+Ganti/timpa file dengan nama yang sama bila ingin memperbarui screenshot, lalu commit & push.
