@@ -2,29 +2,37 @@
 
 # 📨 Venmail — Anonymous Temporary Email
 
-### Privacy-first disposable inbox — get a working email address in one second, no signup. Built on the Cloudflare edge.
+### A privacy-first disposable inbox that actually receives the verification codes other temp-mail services can't.
 
 [![Live](https://img.shields.io/badge/Live-venmail.my.id-34d399?style=for-the-badge)](https://venmail.my.id)
 [![Next.js](https://img.shields.io/badge/Next.js_14-000000?style=for-the-badge&logo=next.js&logoColor=white)](#)
 [![Cloudflare](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](#)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#)
 
-**🔗 Live demo: [venmail.my.id](https://venmail.my.id)**
+**🔗 Live demo — [venmail.my.id](https://venmail.my.id)**
+
+<br/>
+
+<img src="docs/screenshots/inbox.png" alt="Venmail inbox" width="900"/>
+
+<sub>Get a working email address in one second — no signup — and watch verification codes land in real time.</sub>
 
 </div>
 
 ---
 
-> **Note on this repository**
-> This is a **public showcase / case study** of a private project. It contains the product write-up and screenshots only — **the source code is proprietary and not included**. See [License](#-license).
+> **About this repository**
+> This is a **public showcase / case study** of a private project — product write-up and screenshots only. **The source code is proprietary and not included.** See [License](#-license).
 
 ---
 
-## ✨ Overview
+## ⚡ Why Venmail?
 
-**Venmail** is a privacy-first **anonymous temporary email** service. Land on the site and you instantly get a real, working `@venmail.my.id` address — **no signup, no personal data, no tracking**. Incoming mail appears in real time. When you're done, the inbox simply expires and disappears.
+Most disposable-email services share a handful of well-known "throwaway" domains that big platforms have **blacklisted** — so the verification email never arrives, and you're stuck.
 
-Perfect for signing up to trials, verifying accounts, or anywhere you'd rather not hand over your real email. The whole thing runs **serverless on Cloudflare's edge** — globally fast and built to scale.
+**Venmail runs on its own private domain** (`venmail.my.id`) over real Cloudflare Email Routing — so it looks like an ordinary mailbox, **not** a flagged temp-mail domain.
+
+> ✅ **The result:** Venmail reliably receives OTP / verification codes from services that *reject* typical disposable email — tested with **ChatGPT (OpenAI)**, **Booking.com**, and more. You can actually complete the signup.
 
 ---
 
@@ -32,23 +40,28 @@ Perfect for signing up to trials, verifying accounts, or anywhere you'd rather n
 
 - ⚡ **Instant inbox, zero signup** — a random anonymous address is created automatically on your first visit.
 - 📥 **Real-time mail** — new messages arrive within ~1 second, with desktop notifications and a sound alert.
-- ✍️ **Custom address (optional)** — prefer your own name? Pick `you@venmail.my.id` and an optional password.
+- 🛡️ **Gets through where others are blocked** — private domain = OTP codes from major services actually land.
+- ✍️ **Custom address (optional)** — pick `you@venmail.my.id` and an optional password.
 - 🔁 **Reusable across devices** — set a password and log back into the same inbox anywhere.
-- 📧 **Full email reader** — clean HTML rendering (safely sandboxed), inline images, and a plain-text view.
-- ⏳ **Auto-expiry for privacy** — inboxes and messages self-delete automatically; nothing lingers.
-- 🌙 **Polished dark UI** — responsive, animated, and mobile-first.
+- 📧 **Full email reader** — clean HTML rendering (safely sandboxed), inline images, plain-text view.
+- ⏳ **Auto-expiry for privacy** — inboxes and messages self-delete; nothing lingers.
+- 🌙 **Polished dark UI** — responsive, animated, mobile-first.
 
 ---
 
-## 📸 Screenshots
+## 📸 See it in action
 
-| Real-time inbox | Reading an email |
-|---|---|
-| ![Inbox](docs/screenshots/inbox.png) | ![Email](docs/screenshots/email.png) |
+**Receiving a verification code, then using it to create a real account:**
 
-| Verification code, instantly | Used to sign up for a real service ✅ |
-|---|---|
-| ![Verification code](docs/screenshots/verification.png) | ![In real use](docs/screenshots/in-use.png) |
+| 📨 OTP arrives instantly | ✅ Real ChatGPT account created with a Venmail address |
+|:---:|:---:|
+| <img src="docs/screenshots/verification.png" width="430"/> | <img src="docs/screenshots/in-use.png" width="430"/> |
+
+**Reading a full HTML email (safely sandboxed):**
+
+<div align="center">
+<img src="docs/screenshots/email.png" alt="Email reader" width="760"/>
+</div>
 
 ---
 
@@ -83,8 +96,9 @@ Perfect for signing up to trials, verifying accounts, or anywhere you'd rather n
 ```
 
 **Design highlights**
-- The browser never talks to the Worker directly — a **same-origin proxy backed by a Service Binding** forwards requests Worker-to-Worker. This sidesteps the cross-origin blocking, ad-blockers, and DNS filters that often break disposable-mail domains, and bridges the **HttpOnly JWT cookie** so tokens never touch JavaScript (XSS-safe).
-- Clean **Account → Inbox → Message** data model with a sliding expiry that keeps active inboxes alive and quietly retires idle ones.
+- A **real custom domain on Cloudflare Email Routing** — the key reason verification emails from strict providers actually get delivered.
+- The browser never talks to the Worker directly — a **same-origin proxy backed by a Service Binding** forwards requests Worker-to-Worker. This sidesteps the cross-origin blocking, ad-blockers, and DNS filters that break disposable-mail domains, and bridges the **HttpOnly JWT cookie** so tokens never touch JavaScript (XSS-safe).
+- Clean **Account → Inbox → Message** model with a sliding expiry that keeps active inboxes alive and quietly retires idle ones.
 - Real-world **email engineering**: MIME + inline-image handling and sender-address normalization for a clean, readable inbox.
 
 ---
