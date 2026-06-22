@@ -6,6 +6,14 @@ The Venmail application and its source code are proprietary and confidential.
 No license is granted to use, copy, modify, merge, publish, distribute,
 sublicense, or sell any part of the software, in whole or in part.
 
+SERVICE SUBSCRIPTION
+Access to the Venmail service and its Developer API is offered to end users
+under a paid subscription, billed monthly. Subscription plans, current pricing,
+and checkout are available at https://venmail.my.id. A valid, active
+subscription is required for programmatic or commercial use of the service.
+This grants a right to USE the hosted service only; it conveys no rights to the
+source code, which remains proprietary as stated above.
+
 The README, documentation, and screenshots contained in this repository are
 provided solely for portfolio evaluation and demonstration purposes. They may
 not be reproduced or reused without the prior written permission of the author.

@@ -42,6 +42,8 @@ Most disposable-email services share a handful of well-known "throwaway" domains
 - 📥 **Real-time mail** — new messages arrive within ~1 second, with desktop notifications and a sound alert.
 - 🛡️ **Gets through where others are blocked** — private domain = OTP codes from major services actually land.
 - ✍️ **Custom address (optional)** — pick `you@venmail.my.id` and an optional password.
+- 🌐 **Multiple domains** — create addresses across several private domains.
+- 🔌 **Developer API** — create inboxes and fetch verification codes (OTP) programmatically over REST.
 - 🔁 **Reusable across devices** — set a password and log back into the same inbox anywhere.
 - 📧 **Full email reader** — clean HTML rendering (safely sandboxed), inline images, plain-text view.
 - ⏳ **Auto-expiry for privacy** — inboxes and messages self-delete; nothing lingers.
@@ -121,11 +123,30 @@ Most disposable-email services share a handful of well-known "throwaway" domains
 
 ---
 
+## 💳 Plans & Pricing
+
+The web inbox is **free** to use. For programmatic access, the **Developer API** is available as a subscription, **billed monthly**:
+
+| Plan | Price / mo | Inboxes / day | OTP calls / day |
+|---|---|---|---|
+| Free | Rp0 | 3 | 10 |
+| Starter | Rp49K | 20 | 100 |
+| Pro | Rp149K | 100 | 500 |
+| Unlimited | Rp399K | Unlimited | Unlimited |
+
+Every plan includes automatic OTP / verification-code retrieval, and each address stays valid for up to **3 years**.
+
+**👉 Current pricing & checkout — [venmail.my.id](https://venmail.my.id)**
+
+---
+
 ## 📄 License
 
 **© 2026 Ksatria Bintang Samudra. All rights reserved.**
 
 This repository is a portfolio showcase. The source code of Venmail is **proprietary and not licensed for reuse, copying, or distribution**. The text and screenshots here are provided for evaluation purposes only.
+
+Access to the Venmail service and Developer API is offered to end users under a **paid monthly subscription** — see pricing and subscribe at **[venmail.my.id](https://venmail.my.id)**.
 
 ---
 
