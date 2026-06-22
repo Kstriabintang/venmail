@@ -129,10 +129,10 @@ The web inbox is **free** to use. For programmatic access, the **Developer API**
 
 | Plan | Price / mo | Inboxes / day | OTP calls / day |
 |---|---|---|---|
-| Free | Rp0 | 3 | 10 |
-| Starter | Rp49K | 20 | 100 |
-| Pro | Rp149K | 100 | 500 |
-| Unlimited | Rp399K | Unlimited | Unlimited |
+| Free | $0 | 3 | 10 |
+| Starter | $5 | 20 | 100 |
+| Pro | $10 | 100 | 500 |
+| Unlimited | $30 | Unlimited | Unlimited |
 
 Every plan includes automatic OTP / verification-code retrieval, and each address stays valid for up to **3 years**.
 
