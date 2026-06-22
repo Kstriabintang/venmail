@@ -9,7 +9,7 @@
 [![Cloudflare](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](#)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#)
 
-**🔗 Live demo — [venmail.my.id](https://venmail.my.id)**
+**🔗 Live demo — [venmail.my.id](https://venmail.my.id)**  ·  **💳 [Plans & pricing](https://venmail.my.id/pricing)**
 
 <br/>
 
